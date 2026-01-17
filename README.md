@@ -1,103 +1,100 @@
-# Jam Lima Official Website
+# Jam Lima Website
 
-Jam Lima adalah band bocah-bocah Indonesia di NUS Singapore yang membawakan musik dari hati untuk kalian semua.
+Website resmi untuk band Jam Lima, sebuah band indie Indonesia yang beranggotakan 5 mahasiswa NUS Singapore. Website ini menampilkan musik, informasi band, merchandise, dan jadwal pertunjukan.
 
-## Tentang Project
+## Fitur Website
 
-Website resmi untuk band Jam Lima, menampilkan:
-- Album debut "Hidup Di Dunia"
-- Single terbaru "Rayuan Gila"
-- Informasi tentang band
-- Galeri musik dan foto
-- Merchandise
-- Informasi kontak dan jadwal pertunjukan
+### Halaman Utama
+- **Hero Section**: Perkenalan band dengan album terbaru "Rayuan Gila"
+- **Music Section**: Showcase album "Hidup Di Dunia" (2024) dan single terbaru
+- **Events Section**: Jadwal pertunjukan live dan riwayat show
+- **About Section**: Cerita band dan statistik (1570+ followers, 1096 monthly listeners)
+- **Merchandise**: Toko online untuk merchandise resmi
+- **Contact**: Link ke sosial media dan informasi kontak
 
-## Teknologi yang Digunakan
+### Halaman Lirik
+- Lirik dan deskripsi untuk 11 lagu dari album "Hidup Di Dunia"
+- Tema dan bahasa setiap lagu (Indonesia, English, Bilingual)
+- Link streaming ke Spotify dan Apple Music
 
-Project ini dibangun dengan teknologi modern:
+## Teknologi
 
-- **Vite** - Build tool yang cepat
-- **TypeScript** - Type-safe JavaScript
-- **React** - Library UI
-- **shadcn-ui** - Komponen UI yang indah
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Animasi smooth
-- **React Router** - Routing untuk SPA
-
-## Cara Menjalankan Project
-
-### Persyaratan
-
-- Node.js & npm terinstall - [install dengan nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-### Langkah-langkah
-
-```sh
-# 1. Clone repository
-git clone <YOUR_GIT_URL>
-
-# 2. Masuk ke direktori project
-cd <YOUR_PROJECT_NAME>
-
-# 3. Install dependencies
-npm install
-
-# 4. Jalankan development server
-npm run dev
-```
-
-### Script yang Tersedia
-
-- `npm run dev` - Jalankan development server
-- `npm run build` - Build untuk production
-- `npm run build:dev` - Build untuk development
-- `npm run lint` - Jalankan ESLint
-- `npm run preview` - Preview build production
-- `npm run test` - Jalankan test
-- `npm run test:watch` - Jalankan test dengan watch mode
+Website ini dibangun dengan:
+- **React 18** dengan TypeScript
+- **Vite** untuk build dan development server
+- **React Router** untuk navigasi SPA
+- **Framer Motion** untuk animasi
+- **shadcn/ui** untuk komponen UI
+- **Tailwind CSS** untuk styling
+- **Radix UI** untuk primitive components
+- **React Query** untuk state management
 
 ## Struktur Project
 
 ```
 src/
 ├── components/          # Komponen React
-│   ├── ui/             # Komponen shadcn-ui
-│   └── ...             # Komponen custom
-├── pages/              # Halaman utama
-├── hooks/              # Custom React hooks
-├── lib/                # Utility functions
-├── assets/             # Gambar dan media
-└── test/               # File test
+│   ├── ui/             # Komponen shadcn/ui
+│   ├── Header.tsx      # Navigation header
+│   ├── HeroSection.tsx # Hero dengan album cover
+│   ├── MusicSection.tsx # Showcase musik dan streaming
+│   ├── AboutSection.tsx # Tentang band
+│   ├── EventsSection.tsx # Jadwal dan riwayat show
+│   ├── MerchSection.tsx # Merchandise
+│   ├── ContactSection.tsx # Kontak dan sosial media
+│   └── Footer.tsx      # Footer website
+├── pages/              # Routing pages
+│   ├── Index.tsx       # Halaman utama
+│   ├── Lyrics.tsx      # Halaman lirik album
+│   └── NotFound.tsx    # 404 page
+├── hooks/              # Custom hooks
+├── lib/                # Utilities
+├── assets/             # Images (album covers, band photos)
+└── test/               # Test files
 ```
+
+## Setup dan Development
+
+### Prerequisites
+- Node.js 18+
+- npm atau bun
+
+### Installation
+```bash
+# Clone repository
+git clone <repository-url>
+cd jam-lima-vibes-main
+
+# Install dependencies
+npm install
+
+# Jalankan development server
+npm run dev
+```
+
+### Available Scripts
+- `npm run dev` - Development server (localhost:8080)
+- `npm run build` - Production build
+- `npm run preview` - Preview production build
+- `npm run lint` - ESLint check
 
 ## Deployment
 
-Project ini dapat di-deploy ke berbagai platform hosting seperti:
+Website dapat di-deploy ke:
 - Vercel
 - Netlify
 - GitHub Pages
 - VPS/Server
 
-Build production dengan:
-```sh
+Build production:
+```bash
 npm run build
 ```
 
-## Kontribusi
-
-Jika ingin berkontribusi pada development website Jam Lima:
-
-1. Fork repository
-2. Buat branch fitur baru (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
-
-## Lisensi
-
-Project ini dibuat untuk band Jam Lima.
-
-## Kontak
+## Kontak Band
 
 - **Instagram**: [@jam5band](https://instagram.com/jam5band)
-- **Website**: [jam-lima.vercel.app](https://jam-lima.vercel.app)
+- **YouTube**: [@jamlimaband](https://www.youtube.com/@jamlimaband)
+- **Email**: jam.lima.cihuy@gmail.com
+- **Spotify**: [Jam Lima](https://open.spotify.com/artist/2mSOKnCiXZk3Ho0xLbtaI7)
+- **Merchandise**: [Tree Link](https://tr.ee/PE-7jFIf1J)
