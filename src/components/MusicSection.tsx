@@ -4,7 +4,7 @@ import singleRayuanGila from "@/assets/single-rayuan-gila.jpeg";
 import spotifyLogo from "@/assets/Spotify.png";
 import appleMusicLogo from "@/assets/AppleMusic.jpeg";
 import youtubeLogo from "@/assets/Youtube.png";
-import soundcloudLogo from "@/assets/SoundCloud.png";
+import soundcloudLogo from "@/assets/SoundCloud.jpeg";
 
 const releases = [
   {
@@ -177,7 +177,7 @@ const MusicSection = () => {
                 <img
                   src={platform.logo}
                   alt={`${platform.name} logo`}
-                  className="h-6 w-6 object-contain"
+                  className="h-6 w-6 shrink-0 object-contain"
                 />
                 <span className="font-medium">{platform.name}</span>
               </motion.a>

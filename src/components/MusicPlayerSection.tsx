@@ -1,3 +1,6 @@
+import spotifyLogo from "@/assets/Spotify.png";
+import appleMusicLogo from "@/assets/AppleMusic.jpeg";
+
 const MusicPlayerSection = () => {
   return (
     <section id="listen" className="py-24 bg-background">
@@ -75,7 +78,8 @@ const MusicPlayerSection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#1DB954] text-white rounded-xl font-semibold hover:opacity-90 transition-opacity"
             >
-              <span>🎧</span> Play on Spotify
+              <img src={spotifyLogo} alt="Spotify logo" className="h-6 w-6 shrink-0 object-contain" />
+              Play on Spotify
             </a>
             <a
               href="https://music.apple.com/sg/album/rayuan-gila-single/1835015290"
@@ -83,7 +87,8 @@ const MusicPlayerSection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-xl font-semibold hover:opacity-90 transition-opacity"
             >
-              <span>🍎</span> Apple Music
+              <img src={appleMusicLogo} alt="Apple Music logo" className="h-6 w-6 shrink-0 object-contain" />
+              Apple Music
             </a>
           </div>
         </div>
