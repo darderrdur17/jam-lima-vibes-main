@@ -47,7 +47,7 @@ const MusicPlayerSection = () => {
                 scrolling="no"
                 frameBorder="no"
                 allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mades_jam5band&color=%23d84315&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
+                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/m-amadeus-ihsan-candra/sets/jam-6-jam-7-jam-8-bukan-jam-5&color=%23d84315&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
                 title="Jam Lima SoundCloud Player"
               ></iframe>
             </div>

@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import albumHidupDiDunia from "@/assets/album-hidup-di-dunia.jpeg";
 import singleRayuanGila from "@/assets/single-rayuan-gila.jpeg";
+import spotifyLogo from "@/assets/Spotify.png";
+import appleMusicLogo from "@/assets/AppleMusic.jpeg";
+import youtubeLogo from "@/assets/Youtube.png";
+import soundcloudLogo from "@/assets/SoundCloud.png";
 
 const releases = [
   {
@@ -35,10 +39,26 @@ const releases = [
 ];
 
 const streamingPlatforms = [
-  { name: "Spotify", url: "https://open.spotify.com/artist/2mSOKnCiXZk3Ho0xLbtaI7", icon: "🎧" },
-  { name: "Apple Music", url: "https://music.apple.com/sg/album/hidup-di-dunia/1754043162", icon: "🍎" },
-  { name: "YouTube", url: "https://www.youtube.com/@jamlimaband", icon: "▶️" },
-  { name: "SoundCloud", url: "https://soundcloud.com/mades_jam5band", icon: "☁️" },
+  {
+    name: "Spotify",
+    url: "https://open.spotify.com/artist/2mSOKnCiXZk3Ho0xLbtaI7",
+    logo: spotifyLogo,
+  },
+  {
+    name: "Apple Music",
+    url: "https://music.apple.com/sg/album/hidup-di-dunia/1754043162",
+    logo: appleMusicLogo,
+  },
+  {
+    name: "YouTube",
+    url: "https://www.youtube.com/@jamlimaband",
+    logo: youtubeLogo,
+  },
+  {
+    name: "SoundCloud",
+    url: "https://soundcloud.com/mades_jam5band",
+    logo: soundcloudLogo,
+  },
 ];
 
 const MusicSection = () => {
@@ -154,7 +174,11 @@ const MusicSection = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-muted rounded-xl hover:bg-primary/10 hover:text-primary transition-all duration-300 border border-transparent hover:border-primary/30"
               >
-                <span className="text-xl">{platform.icon}</span>
+                <img
+                  src={platform.logo}
+                  alt={`${platform.name} logo`}
+                  className="h-6 w-6 object-contain"
+                />
                 <span className="font-medium">{platform.name}</span>
               </motion.a>
             ))}

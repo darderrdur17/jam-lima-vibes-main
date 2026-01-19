@@ -22,7 +22,7 @@ const socialLinks = [
   },
   {
     name: "Merchandise",
-    url: "https://tr.ee/PE-7jFIf1J",
+    url: "https://shopee.co.id/jamlimamerch",
     icon: ShoppingBag,
     handle: "Shop Merch",
   },
