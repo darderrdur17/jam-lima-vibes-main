@@ -8,6 +8,7 @@ const Header = () => {
   const navLinks = [
     { label: "Home", href: "#home" },
     { label: "Music", href: "#music" },
+    { label: "Analytics", href: "#analytics" },
     { label: "Events", href: "#events" },
     { label: "Gallery", href: "#gallery" },
     { label: "About", href: "#about" },

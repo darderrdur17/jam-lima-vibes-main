@@ -91,6 +91,34 @@ Build production:
 npm run build
 ```
 
+## Analytics API (Live Stats)
+
+Dashboard analytics mengambil data dari endpoint `/api/analytics`. Untuk mengaktifkan data real-time,
+set environment variables berikut di Vercel/Netlify atau di `.env` lokal (jangan commit kredensial):
+
+```
+SPOTIFY_FALLBACK_FOLLOWERS=optional_manual_value
+SPOTIFY_CLIENT_ID=...
+SPOTIFY_CLIENT_SECRET=...
+SPOTIFY_ARTIST_ID=2mSOKnCiXZk3Ho0xLbtaI7
+
+YOUTUBE_API_KEY=...
+YOUTUBE_CHANNEL_ID=...
+
+SOUNDCLOUD_CLIENT_ID=...
+SOUNDCLOUD_USER_ID=...
+
+APPLE_MUSIC_DEVELOPER_TOKEN=...
+APPLE_MUSIC_ARTIST_ID=...
+APPLE_MUSIC_STOREFRONT=sg
+```
+
+Catatan:
+- Spotify tidak menyediakan data monthly listeners di API publik, jadi kartu Spotify menampilkan
+  followers sebagai proxy.
+- Apple Music tidak menyediakan statistik listener publik; kartu akan menampilkan status unavailable.
+- Letakkan file `.env` di root project, bukan di folder `api`, agar terbaca saat build/deploy.
+
 ## Kontak Band
 
 - **Instagram**: [@jam5band](https://instagram.com/jam5band)
